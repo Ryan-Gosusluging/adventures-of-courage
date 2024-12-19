@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+    <section id = "menu">
+    <div id="theHead">Похождения Куража</div>
+    <div id="startButton" onmouseover="this.style.backgroundColor = 'purple'"onmouseout="this.style.backgroundColor = 'rgb(247, 7, 247)'" onclick = "window.start()">Начать игру</div>
+    <div id="controlsBtn" onmouseover="this.style.backgroundColor = 'purple'" onmouseout="this.style.backgroundColor = 'rgb(247, 7, 247)'" onclick="window.showControls()">Управление</div>
+    <div id="authorBtn" onmouseover="this.style.backgroundColor = 'purple'" onmouseout="this.style.backgroundColor = 'rgb(247, 7, 247)'" onclick="window.showAuthor()">Об авторе</div>
+    <div id = "author">Игра разработана студентом СГТУ имени Ю.А.Гагарина группы б1-ИФСТ-23 Денисовым Станиславом Вячеславовичем</div>
+    <section id="controls">
+        <div>Управление</div>
+        <div>Передвижение:</div>
+        <p>⮕ - движение вправо</p>
+        <p>⬅ - движение влево</p>
+        <p>⬆ - прыжок</p>
+        <p>⬇ - остановиться (сесть)</p>
+        <div>Способности:</div>
+        <p>↵ (Enter) - атака кувырком</p>
+        <p>⬆ + ⬇ в воздухе - атака в виде нырка</p>
+        <div>Прочее:</div>
+        <p>Кнопка ESC - пауза и просмотр цели игры</p>
+        <p>'R' - выход в меню (если игра завершилась проигрышем)</p>
+    </section>
+    <div id="backBtn" onmouseover="this.style.backgroundColor = 'red'" onmouseout="this.style.backgroundColor = 'purple'" onclick="window.goBack()">Назад</div>
+    </section>
+    <div id="main">
+    
+        <canvas id = "canvas1"></canvas>
+
+        <img id = "player" src = "assets/dog.png">
+        <img id = "layer1" src = "assets/layer-1.png">
+        <img id = "layer2" src = "assets/layer-2.png">
+        <img id = "layer3" src = "assets/layer-3.png">
+        <img id = "layer4" src = "assets/layer-4.png">
+        <img id = "layer5" src = "assets/layer-5.png">
+        <img id = "enemy_fly" src = "assets/enemy_fly.png">
+        <img id = "enemy_plant" src = "assets/enemy_plant.png">
+        <img id = "enemy_spider" src = "assets/enemy_spider.png">
+        <img id = "fire" src = "assets/fire.png">
+        <img id = "collisionAnimation" src = "assets/boom.png">
+        <img id = "lives" src = "assets/heart.png">
+    
+    </div>
+    <script type = "module" src = "js/main.js"></script> </body>
+</html>

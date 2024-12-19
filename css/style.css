@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+#canvas1{
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_fly, #enemy_plant, #enemy_spider, #fire, #collisionAnimation, #lives{
+    display: none;
+}
+
+#menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+}
+
+#main{
+    display: none;
+}
+
+#startButton, #controlsBtn, #authorBtn, #backBtn{
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid goldenrod;
+    border-radius: 7px;
+    background-color: rgb(247, 7, 247);
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Courier New";
+    margin-top: 40px;
+    cursor: pointer;
+}
+  
+#theHead{
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Courier New";
+    margin-bottom: 100px;
+}
+
+#controls, #author{
+    color: black;
+    width: 610px;
+    font-size: 1.5em;
+    font-family: "Courier New";
+    display: none;
+    background-color: inherit;
+}
+
+#backBtn{
+    display: none;
+}
